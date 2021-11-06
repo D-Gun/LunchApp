@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/canvas.css">
+    
+    <title>룰렛</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="static/images/binbin.jpg" style="width: 30px; height: 30px;">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div id="pan">
+        <div id="pin"></div>
+        <canvas id="canvas" width="1000px" height="1000px"></canvas>
+    </div>
+    <div id="map" style="margin-right:100;width:90%;height:600px;"></div>
+    <!-- key:f66274f2990c07b8ac6d479a30705557 -->
+    <!-- kakaoMapAPI 로드 -->
+    <script src="kakaoMapAPI/map.js" defer></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f66274f2990c07b8ac6d479a30705557&libraries=services,clusterer,drawing"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src='http://cdn.html5quintus.com/v0.2.0/quintus-all.min.js'></script>
+    <script src="js/canvas.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
