@@ -34,8 +34,10 @@ const productList = new Array(
     {
         name: '마일리지',
         color: 'pink'
-    }
+    },
 )
+
+
 
 ctx.translate(500, 500);
 
@@ -46,16 +48,15 @@ productList.forEach(function(e, i) {
     ctx.closePath();
     ctx.fillStyle = e.color;
     ctx.fill();
+
     ctx.fillStyle = 'white';
     ctx.textAlign = 'left';
-    ctx.font = '15px sanserif';
-    ctx.fillText(e.name, 200, 50);
+    ctx.font = '14px sanserif';
+    ctx.fillText(e.name, 50, 50);
 
     ctx.rotate((360/productList.length)*(Math.PI/180));
 });
-// 중앙에 하안 원 채워넣기
-// ctx.beginPath();
-// ctx.arc(0, 0, 200, 0, 360*(Math.PI/180));
-// ctx.fillStyle = 'white';
-// ctx.fill();
+
+
+
 
